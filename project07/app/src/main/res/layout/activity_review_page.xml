@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EED1F3"
+    tools:context=".review_page">
+
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:background="@android:drawable/alert_light_frame"
+        android:fontFamily="@font/lemon"
+        android:text="Review"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#0C0C0C"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/alert_light_frame"
+        android:fontFamily="@font/aclonica"
+        android:text="RATING   "
+        android:textColor="#447E97"
+        android:textSize="34sp" />
+
+    <RatingBar
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="37dp"
+        android:layout_toRightOf="@id/rate"
+        android:background="#E7C4ED"
+        android:isIndicator="false"
+        android:tooltipText="#E7C4ED"
+
+        />
+
+
+      <!--  android:isIndicator="false"
+        android:progressTint="@android:color/holo_orange_dark"
+        android:secondaryProgressTint="@android:color/holo_orange_light"
+        android:thumbTint="@android:color/holo_orange_light" -->
+
+
+    <TextView
+        android:id="@+id/genre"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rate"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="44dp"
+        android:background="@android:drawable/alert_light_frame"
+        android:fontFamily="@font/candal"
+        android:text="  GENRE   "
+        android:textAlignment="center"
+        android:textColor="#981C46"
+        android:textSize="34sp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="210dp"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="261dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/genre"
+        android:background="#050505"
+        android:backgroundTint="#F2CFF8"
+        android:fontFamily="@font/aclonica"
+        android:popupBackground="#E7C5ED"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/desc"
+        android:layout_width="403dp"
+        android:layout_height="209dp"
+        android:layout_below="@+id/genre"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="8dp"
+        android:background="#CFA6D6"
+        android:fontFamily="@font/lemon"
+        android:hint="WRITE YOUR REVIEW...."
+        android:textAlignment="center"
+        android:textColor="#0C0C0C"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/heading"
+        android:backgroundTint="#0E0C0E"
+        android:fontFamily="@font/lemon"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/btr"
+        android:layout_width="120dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="633dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="2dp"
+        android:backgroundTint="#CFA6D6"
+        android:fontFamily="@font/lemon"
+        android:text="Back"
+        android:textColor="#0E0D0D"
+        android:textSize="24sp" />
+
+</RelativeLayout>
